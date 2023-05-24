@@ -33,7 +33,6 @@ public class ArrArray {
             for (int j = 0; j < arrArr[i].length; j++) {
                 if (arrArr[i][j].isDeleted) {
                     arrArr[i][j] = tempEl[0];
-                    arrArr[i][j].isDeleted = false;
                     quickSort(arrArr[i], 0, arrArr[i].length - 1);
                     return;
                 }
